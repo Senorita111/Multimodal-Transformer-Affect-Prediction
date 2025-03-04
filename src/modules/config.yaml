@@ -1,0 +1,16 @@
+data:
+  video_path: "data/processed/Fusion_Video_MITHOS.pkl"
+  audio_path: "data/processed/Fusion_Audio_MITHOS.pkl"
+  labels_p_path: "data/processed/Fusion_Labels_P_MITHOS.pkl"
+  labels_a_path: "data/processed/Fusion_Labels_A_MITHOS.pkl"
+  labels_d_path: "data/processed/Fusion_Labels_D_MITHOS.pkl"
+
+training:
+  batch_size: 1
+  num_epochs: 50
+  learning_rate: 0.001
+  patience: 5
+  model_save_path: "best_fusion_model.pth"
+
+evaluation:
+  model_load_path: "best_fusion_model.pth"
