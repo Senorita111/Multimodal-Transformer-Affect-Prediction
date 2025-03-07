@@ -1,0 +1,1 @@
+We use only the cropped face data instead of the whole frame from the video dataset. Preprocessing this might take a long time and therefore we store the preprocessed data in pickle files in this folder which can be used directly to train the ML models. 

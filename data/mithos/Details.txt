@@ -1,0 +1,3 @@
+Upload the MITHOS dataset here. 
+
+To get access to the MITHOS dataset, reach out to Patrick Gebhard (patrick.gebhard@dfki.de) or Dimitra Tsovaltzi (dimitra.tsovaltzi@dfki.de) from the Social Computing and Affective AI Group, DFKI Saarbrücken. 
