@@ -31,7 +31,7 @@ class AudioVisualTransformer(nn.Module):
     def __init__(self, num_classes, d_model=32, nhead=4, num_encoder_layers=3, dim_feedforward=32):
         super(AudioVisualTransformer, self).__init__()
         self.video_feature_extractor = ViViTModel()
-        self.video_feature_extractor.load_state_dict(torch.load('Final_ViViT_DM_PAD.pth')) # Load the Pretrained and fine-tuned model
+        self.video_feature_extractor.load_state_dict(torch.load('best_video_model_mithos.pth')) # Load the Pretrained and fine-tuned model
         self.video_feature_extractor.fc = nn.Identity()
 
 
