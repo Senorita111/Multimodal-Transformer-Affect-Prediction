@@ -3,6 +3,18 @@
 ## Project Overview
 This project aims to **automate affect analysis** by predicting **Pleasure, Arousal, and Dominance (PAD)** values from **non-intrusive multimodal data** (video and audio). Traditional affect recognition methods **ignore Dominance** or rely on **intrusive sensor-based approaches** (EEG, HRV). Our solution uses a **transformer-based late fusion model** to integrate information from video and audio without requiring wearable sensors.
 
+##  Dataset Information
+To train and evaluate the models, we use two publicly available datasets:
+
+### **🔹 DEAP Dataset**
+- The **DEAP dataset** contains EEG, physiological, and **video recordings** of participants watching music videos.
+- To obtain access, **request the dataset** from [Queen Mary University London](https://www.eecs.qmul.ac.uk/mmv/datasets/deap/).
+
+### **🔹 MITHOS Dataset**
+- The **MITHOS dataset** captures real-world teacher-student interactions, annotated with **Pleasure, Arousal, and Dominance (PAD) values**.
+- To obtain access, contact **Patrick Gebhard** (`patrick.gebhard@dfki.de`) or **Dimitra Tsovaltzi** (`dimitra.tsovaltzi@dfki.de`) from the **Social Computing and Affective AI Group, DFKI Saarbrücken**.
+
+
 ## Model Architecture
 
 ![Multimodal Fusion Model](ModelArchitectureOverview.png)
