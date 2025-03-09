@@ -1,9 +1,9 @@
 data:
-  video_path1: "data/preprocessed/Cropped_Face3_DEAP_s.pkl"
-  video_path2: "data/preprocessed/Cropped_Face4_DEAP_s.pkl"
-  labels_p_path: "data/preprocessed/Cleaned_Labels_P.pkl"
-  labels_a_path: "data/preprocessed/Cleaned_Labels_A.pkl"
-  labels_d_path: "data/preprocessed/Cleaned_Labels_D.pkl"
+  video_path1: "data/processed/Cropped_Face3_DEAP_s.pkl"
+  video_path2: "data/processed/Cropped_Face4_DEAP_s.pkl"
+  labels_p_path: "data/processed/Cleaned_Labels_P.pkl"
+  labels_a_path: "data/processed/Cleaned_Labels_A.pkl"
+  labels_d_path: "data/processed/Cleaned_Labels_D.pkl"
 
 training:
   batch_size: 8
