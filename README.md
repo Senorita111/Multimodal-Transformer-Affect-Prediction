@@ -3,24 +3,24 @@
 ## Project Overview
 This project aims to **automate affect analysis** by predicting **Pleasure, Arousal, and Dominance (PAD)** values from **non-intrusive multimodal data** (video and audio). Traditional affect recognition methods **ignore Dominance** or rely on **intrusive sensor-based approaches** (EEG, HRV). Our solution uses a **transformer-based late fusion model** to integrate information from video and audio without requiring wearable sensors.
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ![Multimodal Fusion Model](ModelArchitectureOverview.png)
 
 ### 🔹 **Architecture Overview**
 The model consists of three main components:
-1. **Video Model** (Feature Extraction) 📽️
+1. **Video Model** (Feature Extraction) 
    - A **ViViT-based transformer model**, pretrained on large-scale video datasets.
    - Further **trained on the DEAP dataset** to learn affective features.
    - **Fine-tuned on the MITHOS dataset** to improve generalization in human-agent interactions.
    - The choice of **ViViT** is due to its effectiveness in capturing **spatiotemporal representations** from videos.
 
-2. **Audio Model** (Feature Extraction) 🎙️
+2. **Audio Model** (Feature Extraction) 
    - A **Wav2Vec2-based transformer model**, pretrained on large-scale speech datasets.
    - Fine-tuned on the **MITHOS dataset** to align audio features with affective states.
    - **Wav2Vec2** is selected because of its **self-supervised pretraining**, which allows it to extract **rich, meaningful features** even from noisy audio data.
 
-3. **Multimodal Fusion Model** 🧩
+3. **Multimodal Fusion Model**
    - Takes extracted **video features (768×32)** and **audio features (512×32)**.
    - Uses a **late-fusion transformer model** to dynamically assign importance to each modality.
    - Outputs **continuous PAD values** predicting the emotional state.
@@ -104,7 +104,7 @@ python src/modules/fusion_train.py
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 After training, evaluate the models:
 
 ### 🔹 Evaluate the Fusion Model
@@ -114,7 +114,7 @@ python src/fusion/fusion_evaluate.py
 
 ---
 
-## 📈 Results & Performance
+## Results & Performance
 The performance of the models was evaluated using:
 - **Mean Absolute Error (MAE)**
 - **Range-2 Accuracy**
