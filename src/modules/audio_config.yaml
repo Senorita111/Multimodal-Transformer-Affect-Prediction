@@ -1,0 +1,15 @@
+data:
+  audio_paths: "data/preprocessed/audio_file_paths.pkl"
+  labels_path: "data/preprocessed/audio_labels.pkl"
+
+model:
+  wav2vec_model: "audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim"
+
+training:
+  batch_size: 1
+  num_epochs: 40
+  learning_rate: 0.001
+  train_split: 0.7
+  val_split: 0.8
+  patience: 10
+  model_save_path: "best_audio_model.pth"
