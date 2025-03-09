@@ -1,6 +1,6 @@
 data:
-  audio_paths: "data/preprocessed/audio_file_paths.pkl"
-  labels_path: "data/preprocessed/audio_labels.pkl"
+  audio_paths: "data/processed/audio_file_paths.pkl"
+  labels_path: "data/processed/audio_labels.pkl"
 
 model:
   wav2vec_model: "audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim"
