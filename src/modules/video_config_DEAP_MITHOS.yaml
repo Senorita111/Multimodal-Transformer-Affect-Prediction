@@ -1,0 +1,16 @@
+data:
+  video_path: "data/processed/Cropped_Face_MITHOS.pkl"
+  labels_p_path: "data/processed/Cleaned_Labels_MITHOS_P.pkl"
+  labels_a_path: "data/processed/Cleaned_Labels_MITHOS_A.pkl"
+  labels_d_path: "data/processed/Cleaned_Labels_MITHOS_D.pkl"
+
+training:
+  batch_size: 8
+  num_epochs: 40
+  learning_rate: 0.001
+  sequence_length: 16
+  train_split: 0.9
+  val_split: 0.8
+  patience: 5
+  pretrained_deap_model_path: "best_video_model_deap.pth"
+  model_save_path: "best_video_model_mithos.pth"
