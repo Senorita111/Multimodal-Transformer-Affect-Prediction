@@ -128,8 +128,3 @@ The performance of the models was evaluated using:
 
 ---
 
-
-### 🚀 **Next Steps**
-1. **Copy and paste this README.md into your GitHub repository**.
-2. **Test all commands** to ensure they run without issues.
-3. **Let me know** if you'd like any modifications!
